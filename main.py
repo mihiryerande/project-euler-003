@@ -1,4 +1,4 @@
-# Problem 002:
+# Problem 3:
 #     Largest Prime Factor
 #
 # Description:
