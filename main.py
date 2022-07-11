@@ -7,9 +7,10 @@
 #     What is the largest prime factor of the number 600851475143 ?
 
 from math import ceil, sqrt
+from typing import List
 
 
-def main(n):
+def main(n: int) -> List[int]:
     """
     Return the sorted prime factorization of `n`.
 
@@ -17,7 +18,7 @@ def main(n):
         n (int): Natural number
 
     Returns:
-        Prime factorization of `n` (sorted in increasing order)
+        (List[int]): Prime factorization of `n` (sorted in increasing order)
 
     Raises:
         AssertError: if incorrect params are given
@@ -43,5 +44,7 @@ def main(n):
 if __name__ == '__main__':
     num = int(input('Enter a natural number: '))
     p_fact = main(num)
-    print('Prime factorization:\n{}'.format(p_fact))
-    print('Largest Prime Factor:\n{}'.format(p_fact[-1]))
+    print('Prime factorization of {}:'.format(num))
+    print('  {}'.format(p_fact))
+    print('Largest Prime Factor:')
+    print('  {}'.format(p_fact[-1]))
